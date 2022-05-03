@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+   api_service:
+      build: .
+      image: course-enrollment-api:1.0
+      container_name: course-enrollment-api
+      restart: always
+      ports:
+         - 8080:8080
+      depends_on:
+         - postgres_db
+   postgres_db:
+      image: "postgres:13.1-alpine"
+      restart: always
+      ports:
+         - 5432:5432
+      environment:
+         - POSTGRES_USER=postgres
+         - POSTGRES_PASSWORD=postgres
