@@ -69,8 +69,8 @@ Go to : [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui
 	Body [Json] : 
 		{
 		  "name": "Summer2022",
-		  "startDate": "2021-02-07",
-		  "endDate": "2021-02-07"
+		  "startDate": "2022-05-02",
+		  "endDate": "2022-05-02"
 		}
 
 #### Step 2: Add a new course
